@@ -19,7 +19,7 @@ to install the development version:
 DEMO
 =======
 
-\code{googleformr} comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; read more about it \link[https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b#.fdcefvfsb]{here}. 
+\code{googleformr} comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; read more about it \link[here]{https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b#.fdcefvfsb}. 
 
 ```r
 googleformr::why_R_u_thankful("") # <- your thanksgiving goes here
@@ -50,7 +50,7 @@ form %>% get_form() %>% get_form_entry_ids()
 Contact
 =======
 
-You are welcome to: \* submit suggestions and bug-reports at:
-<https://github.com/steventsimpson/googleformr/issues> \* send a pull
-request on: <https://github.com/steventsimpson/googleformr/> \* compose
-a friendly e-mail to: <steven.troy.simpson@gmail.com>
+You are welcome to: 
+- submit suggestions and bug-reports at: <https://github.com/steventsimpson/googleformr/issues> 
+- send a pull request on: <https://github.com/steventsimpson/googleformr/> 
+- compose a friendly e-mail to: <steven.troy.simpson@gmail.com>
