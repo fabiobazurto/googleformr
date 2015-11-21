@@ -1,3 +1,4 @@
+![](img/googleformr_yay.png)
 
 **googleformr** let's you POST data more securely to Google Forms without needing authentication or permissions like with Google Sheets.
 
