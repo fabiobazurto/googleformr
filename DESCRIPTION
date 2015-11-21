@@ -5,7 +5,7 @@ Authors@R: c(person("Steven", "Simpson", email = "steven.troy.simpson@gmail.com"
 Maintainer: Steven Simpson <steven.troy.simpson@gmail.com>
 Description: GET and POST data to Google Forms; more secure than having to expose Google Sheets in order to POST data
 Depends: R (>= 3.2.2)
-Imports: httr, rvest
+Imports: httr, rvest, xml2
 Suggests: testthat
 Date: 2015-11-18
 License: GPL-2

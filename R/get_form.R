@@ -10,6 +10,6 @@
 #' }
 get_form <- function (form) {
     . <- NULL
-    make_url(form, "get") %>% rvest::html()
+    make_url(form, "get") %>% xml2::read_html()
 }
 

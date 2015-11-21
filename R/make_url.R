@@ -12,10 +12,12 @@
 #' }
 make_url <- function (form, do) {
     if (grepl("^https://docs.google.com", form)) {
-        form <- get_form_id(url)
+        form <- get_form_id(form)
     }
-    switch(tolower(do), get = httr::modify_url("https://docs.google.com/",
-        path = paste0("forms/d/", form, "/viewform")), post = httr::modify_url("https://docs.google.com/",
-        path = paste0("forms/d/", form, "/formResponse")))
+    switch(tolower(do),
+           "get"  = httr::modify_url("https://docs.google.com/",
+                                    path = paste0("forms/d/", form, "/viewform")),
+           "post" = httr::modify_url("https://docs.google.com/",
+                                     path = paste0("forms/d/", form, "/formResponse")))
 }
 
