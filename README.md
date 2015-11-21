@@ -19,7 +19,7 @@ to install the development version:
 DEMO
 =======
 
-\code{googleformr} comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; read more about it \link[here]{https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b#.fdcefvfsb}. 
+\code{googleformr} comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; read more about it [here](https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b#.fdcefvfsb). 
 
 ```r
 googleformr::why_R_u_thankful("") # <- your thanksgiving goes here
