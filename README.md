@@ -34,7 +34,7 @@ why_R_u_thankful <- googleformr::gformr(form,
                                         custom_reply= "Thanks for Giving Thanks!")
 
 # send thanksgiving!
-why_R_u_thankful("R community in my city have been really supportive to my learning.")
+why_R_u_thankful("R community in my city has been really supportive to my learning.")
 ```
 
 You can create your own linked-function to a Google Form using: 
