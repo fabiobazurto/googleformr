@@ -29,9 +29,9 @@ googleformr::why_R_u_thankful("") # <- your thanksgiving goes here
 Here's how I made it
 ```r
 # create function
-form <- “https://docs.google.com/forms/d/1Ttl_SGI1cjRHSw_oU7kwxnGESoMwf4BU4NMAqPA-BRs/viewform"
+form <- "https://docs.google.com/forms/d/1Ttl_SGI1cjRHSw_oU7kwxnGESoMwf4BU4NMAqPA-BRs/viewform"
 why_R_u_thankful <- googleformr::gformr(form,
-                          custom_reply= “Thanks for Giving Thanks!”)
+                          custom_reply= "Thanks for Giving Thanks!")
 
 # send thanksgiving!
 why_R_u_thankful("R community in my city have been really supportive to my learning.")
