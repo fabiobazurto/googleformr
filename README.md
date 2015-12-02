@@ -20,14 +20,24 @@ to install the development version:
 DEMO
 =======
 
-**googleformr** comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; read more about it <a target="_blank" href="https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b">here</a>. 
+**googleformr** comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; <a target="_blank" href="https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b">read more about it</a>. 
 
 ```r
 googleformr::why_R_u_thankful("") # <- your thanksgiving goes here
 ```
 
-You can create your own linked-function to a Google Form using: 
+Here's how I made it
+```r
+# create function
+form <- “https://docs.google.com/forms/d/1Ttl_SGI1cjRHSw_oU7kwxnGESoMwf4BU4NMAqPA-BRs/viewform"
+why_R_u_thankful <- googleformr::gformr(form,
+                          custom_reply= “Thanks for Giving Thanks!”)
 
+# send thanksgiving!
+why_R_u_thankful("R community in my city have been really supportive to my learning.")
+```
+
+You can create your own linked-function to a Google Form using: 
 ```r
 # create function
 form <- "your_google_form_url"
@@ -36,6 +46,7 @@ your_func <- googleformr::gformr(form)
 # send data
 your_func(your_data)
 ```
+
 
 You can extract Google Form question text or entry points using:
 
