@@ -4,6 +4,7 @@
 #'
 #' @param form Can be either the form_url or form_id
 #' @param custom_reply is null, unless you want to say something
+#' @param active allows programmatic silencing gformr functionality if embedded elsewhere
 #' @export
 #' @importFrom magrittr %>%
 #' @examples \dontrun{
