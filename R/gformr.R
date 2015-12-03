@@ -10,12 +10,13 @@
 #' url %>% gformr() -> new_post_to_form
 #' new_post_to_form(content_to_post_to_url)
 #' }
-gformr <- function (form, custom_reply = NULL) {
+gformr <- function (form, custom_reply = NULL, active=TRUE) {
     . <- NULL
     entry.ids <- get_form(form) %>% get_form_entry_ids()
     form_url <- make_url(form, "post")
 
     function(post_content) {
+      if (active){
         r <- httr::POST(form_url, query = stats::setNames(as.list(as.character(post_content)),
             as.character(entry.ids)))
 
@@ -27,6 +28,7 @@ gformr <- function (form, custom_reply = NULL) {
             cat("Error")
           }
         }
+      }
     }
 }
 
