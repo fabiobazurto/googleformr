@@ -20,7 +20,7 @@ to install the development version:
 DEMO
 =======
 
-**googleformr** comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; <a target="_blank" href="https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b">read more about it</a>. 
+**googleformr** comes pre-loaded with a demo function `why_R_u_opensource`. To try out, <a target="_blank" http://data-steve.github.io/googleformr-asks-why-R-u-opensource/">read more about it here</a>. 
 
 ```r
 googleformr::why_R_u_opensource("") # <- your reason goes here
