@@ -1,4 +1,4 @@
-![](img/googleformr_yay.png)
+![](inst/googleformr_yay.png)
 
 **googleformr** let's you POST data more securely to Google Forms without needing authentication or permissions like with Google Sheets.
 
@@ -8,14 +8,14 @@ Installation
 To download the development version of **googleformr**:
 
 Download the [zip
-ball](https://github.com/steventsimpson/googleformr/zipball/master) or
+ball](https://github.com/data-steve/googleformr/zipball/master) or
 [tar
-ball](https://github.com/steventsimpson/googleformr/tarball/master),
+ball](https://github.com/data-steve/googleformr/tarball/master),
 decompress and run `R CMD INSTALL` on it, or use the **pacman** package
 to install the development version:
 
     if (!require("pacman")) install.packages("pacman")
-    pacman::p_load_gh("steventsimpson/googleformr")
+    pacman::p_load_gh("data-steve/googleformr")
 
 DEMO
 =======
@@ -23,18 +23,18 @@ DEMO
 **googleformr** comes pre-loaded with a Open-Source Thanksgiving Google Form to demo on; <a target="_blank" href="https://medium.com/@data_steve/open-source-a-way-of-giving-thanks-9d7962a4518b">read more about it</a>. 
 
 ```r
-googleformr::why_R_u_thankful("") # <- your thanksgiving goes here
+googleformr::why_R_u_opensource("") # <- your reason goes here
 ```
 
 Here's how I made it
 ```r
 # create function
 form <- "https://docs.google.com/forms/d/1Ttl_SGI1cjRHSw_oU7kwxnGESoMwf4BU4NMAqPA-BRs/viewform"
-why_R_u_thankful <- googleformr::gformr(form,
-                                        custom_reply= "Thanks for Giving Thanks!")
+why_R_u_opensource <- googleformr::gformr(form,
+                                        custom_reply= "Thanks for being open!")
 
-# send thanksgiving!
-why_R_u_thankful("R community in my city has been really supportive to my learning.")
+# send reason!
+why_R_u_opensource("R community in my city has been really supportive to my learning.")
 ```
 
 You can create your own linked-function to a Google Form using: 
@@ -63,6 +63,6 @@ Contact
 =======
 
 You are welcome to: 
-- submit suggestions and bug-reports at: <https://github.com/steventsimpson/googleformr/issues> 
-- send a pull request on: <https://github.com/steventsimpson/googleformr/> 
+- submit suggestions and bug-reports at: <https://github.com/data-steve/googleformr/issues> 
+- send a pull request on: <https://github.com/data-steve/googleformr/> 
 - compose a friendly e-mail to: <steven.troy.simpson@gmail.com>

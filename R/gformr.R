@@ -8,12 +8,12 @@
 #' @export
 #' @importFrom magrittr %>%
 #' @examples \dontrun{
-#' url %>% gformr() -> new_post_to_form
+#' new_post_to_form <- gformr(url)
 #' new_post_to_form(content_to_post_to_url)
 #' }
 gformr <- function (form, custom_reply = NULL, active=TRUE) {
     . <- NULL
-    entry.ids <- get_form(form) %>% get_form_entry_ids()
+    entry.ids <- get_form_entry_ids(get_form(form))
     form_url <- make_url(form, "post")
 
     function(post_content) {
