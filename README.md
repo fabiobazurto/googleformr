@@ -20,7 +20,7 @@ to install the development version:
 DEMO
 =======
 
-**googleformr** comes pre-loaded with a demo function `why_R_u_opensource`. To try out, <a target="_blank" http://data-steve.github.io/googleformr-asks-why-R-u-opensource/">read more about it here</a>. 
+**googleformr** comes pre-loaded with a demo function `why_R_u_opensource`. To try out, [read more about it here](http://data-steve.github.io/googleformr-asks-why-R-u-opensource). 
 
 ```r
 googleformr::why_R_u_opensource("") # <- your reason goes here
