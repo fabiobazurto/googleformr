@@ -4,19 +4,23 @@
 \alias{comments_gformr}
 \title{Function to Collect Helful Comments about Googleformr}
 \usage{
-comments_gformr(post_content)
+comments_gformr(post_content, active = TRUE)
 }
 \arguments{
 \item{post_content}{the option of the function returned from gformr}
 
 \item{active}{an option to make the function active or not}
 }
+\value{
+invisible output of httr::POST
+}
 \description{
 Function to Collect Helful Comments about googleformr.
 }
 \examples{
 \dontrun{
-comments_gformr(post_content = "It would useful to be able to distinguish between lots of comments from one useR vs. many useRs")
+comments_gformr(post_content = "It would useful to be able to distinguish
+between lots of comments from one useR vs. many useRs")
 }
 }
 

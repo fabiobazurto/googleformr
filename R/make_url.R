@@ -5,6 +5,7 @@
 #' @param form Can be either the form_url or form_id
 #' @param do Can be either "get" or "post"
 #' @export
+#' @include get_form_id.R
 #' @examples
 #' \dontrun{
 #'   url %>% make_url("get") -> get_url

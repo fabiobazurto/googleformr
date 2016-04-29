@@ -4,7 +4,7 @@
 \alias{gformr}
 \title{Creates Function Linking Form Entries To Post Content}
 \usage{
-gformr(form, custom_reply = NULL, active = TRUE)
+gformr(form, custom_reply = NULL)
 }
 \arguments{
 \item{form}{Can be either the form_url or form_id}
@@ -12,7 +12,7 @@ gformr(form, custom_reply = NULL, active = TRUE)
 \item{custom_reply}{is null, unless you want to say something}
 }
 \value{
-a function(post_content) to post content to the google form
+a function(post_content, active=TRUE) to post content to the google form
 }
 \description{
 Creates Function Linking Form Entries To Post Content. This function allows you to embed

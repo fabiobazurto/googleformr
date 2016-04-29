@@ -1,5 +1,8 @@
 ![](inst/googleformr_yay.png)
 
+[![Build
+Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https://travis-ci.org/data-steve/googleformr)
+
 **googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
 Installation
