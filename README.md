@@ -40,7 +40,7 @@ Create your own comment function
 =============
 
 
-You can create your own `comments` function by linking it to a Google Form using 
+You can create your own `comments_pkg_name` function by linking it to a Google Form using 
 something along the lines of the code below: 
 
 
