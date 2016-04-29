@@ -1,6 +1,6 @@
 ![](inst/googleformr_yay.png)
 
-**googleformr** let's you POST data more securely to Google Forms without needing authentication or permissions like with Google Sheets.
+**googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
 Installation
 ============
@@ -17,38 +17,63 @@ to install the development version:
     if (!require("pacman")) install.packages("pacman")
     pacman::p_load_gh("data-steve/googleformr")
 
-DEMO
-=======
 
-**googleformr** comes pre-loaded with a demo function `why_R_u_opensource`. To try out, [read more about it here](http://data-steve.github.io/googleformr-asks-why-R-u-opensource). 
+Get User Feedback with googleformr
+============
 
-```r
-googleformr::why_R_u_opensource("") # <- your reason goes here
-```
+**googleformr** comes with a `comments_gformr` function that was built with **googleformr**, allowing useRs to send comments to 
+a Google Form I've created for collecting user feedback. 
 
-Here's how I made it
-```r
-# create function
-form <- "https://docs.google.com/forms/d/1Ttl_SGI1cjRHSw_oU7kwxnGESoMwf4BU4NMAqPA-BRs/viewform"
-why_R_u_opensource <- googleformr::gformr(form,
-                                        custom_reply= "Thanks for being open!")
+Not every useR has a github account for posting issues, 
+nor do they run their own blog, nor do they have access to nearby useR groups. 
+So finding new ways to stay accessible to my useRs is important to me. 
 
-# send reason!
-why_R_u_opensource("R community in my city has been really supportive to my learning.")
-```
+Give it a try with something like below!
 
-You can create your own linked-function to a Google Form using: 
-```r
-# create function
-form <- "your_google_form_url"
-your_func <- googleformr::gformr(form)
-
-# send data
-your_func(your_data)
-```
+    googleformr::comments_gformr(
+            post_content = "It would useful for functionality to help distinguish in the data
+                            between lots of comments from one useR vs. many useRs" )
 
 
-You can extract Google Form question text or entry points using:
+
+Create your own comment function
+=============
+
+
+You can create your own `comments` function by linking it to a Google Form using 
+something along the lines of the code below: 
+
+
+      # create function
+      form <- "your_google_form_url"
+      comments_pkg_name <- googleformr::gformr(form
+                                               , custom_reply = "Thanks for supporting pkg_name")
+      
+
+**Note: it is recommended to call your  comments function some clearly signalling  a comment purpose but also something specific to your package.**
+So a function name following the pattern `comments_pkg_name` should get the best of easy
+IntelliSense auto-complete and distinguishability from other packages using the same 
+functionality
+
+
+Once you rebuild your package and post it to github or CRAN, your useRs
+can send comments directly to you from the R console by simply 
+putting their comments into your comments function.
+
+      comments_pkg_name("useR comments")
+
+
+
+Helper Functionality
+====================
+
+You can test that your new `comments_pkg_name` function works by:
+
+- sending a test message to your Google Form and see if it shows up and/or
+- using the `check_form_works` function like so: `check_form_works( comments_pkg_name("test") )`. Either "All good" will appear or a specific http status message describing the error.
+
+
+You can also extract Google Form question text or entry points using to make sure you can bring back the same information as is on your form:
 
 ```r
 # questions
@@ -63,6 +88,7 @@ Contact
 =======
 
 You are welcome to: 
+- send me a comment via `googleformr::comments_gformr()`
 - submit suggestions and bug-reports at: <https://github.com/data-steve/googleformr/issues> 
 - send a pull request on: <https://github.com/data-steve/googleformr/> 
 - compose a friendly e-mail to: <steven.troy.simpson@gmail.com>

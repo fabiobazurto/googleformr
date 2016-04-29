@@ -2,10 +2,11 @@
 #'
 #' Sends Data back to my Google Form About Being opensource. gformr creates why_R_u_opensource into a linked function with the form.
 #'
-#' @param post_content form Can be either the form_url or form_id
+#' @param post_content the option of the function returned from gformr
+#' @param active an option to make the function active or not
 #' @export
-#' @importFrom magrittr %>%
-#' @examples \dontrun{
+#' @examples
+#' \dontrun{
 #' why_R_u_opensource(post_content = "the opensource community is helpful")
 #' }
 

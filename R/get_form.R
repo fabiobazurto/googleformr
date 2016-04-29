@@ -4,12 +4,12 @@
 #'
 #' @param form Can be either the form_url or form_id
 #' @export
-#' @importFrom magrittr %>%
-#' @examples \dontrun{
+#' @include make_url.R
+#' @examples
+#' \dontrun{
 #' url %>% get_form() -> scrape
 #' }
 get_form <- function (form) {
-    . <- NULL
-    make_url(form, "get") %>% xml2::read_html()
+    xml2::read_html(make_url(form, "get"))
 }
 

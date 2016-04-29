@@ -10,15 +10,16 @@ gformr(form, custom_reply = NULL, active = TRUE)
 \item{form}{Can be either the form_url or form_id}
 
 \item{custom_reply}{is null, unless you want to say something}
-
-\item{active}{allows programmatic silencing gformr functionality if embedded elsewhere}
+}
+\value{
+a function(post_content) to post content to the google form
 }
 \description{
 Creates Function Linking Form Entries To Post Content. This function allows you to embed
 }
 \examples{
 \dontrun{
-new_post_to_form <- gformr(url)
+new_post_to_form <- gformr(url)   # this returns a function with post_content as param
 new_post_to_form(content_to_post_to_url)
 }
 }

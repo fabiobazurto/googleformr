@@ -16,8 +16,8 @@ Make Either Get or Post Url for Google Forms
 }
 \examples{
 \dontrun{
-url \%>\% make_url("get") -> get_url
-url \%>\% make_url("post") -> post_url
+  url \%>\% make_url("get") -> get_url
+  url \%>\% make_url("post") -> post_url
 }
 }
 

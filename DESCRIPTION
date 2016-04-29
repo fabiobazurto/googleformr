@@ -10,8 +10,7 @@ Depends:
 Imports:
     httr,
     rvest,
-    xml2,
-    magrittr
+    xml2
 Suggests:
     testthat
 Date: 2015-11-18
@@ -19,3 +18,14 @@ License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
 RoxygenNote: 5.0.1
+Collate:
+    'check_form_works.R'
+    'comments_gformr.R'
+    'make_url.R'
+    'get_form.R'
+    'get_form_entry_ids.R'
+    'get_form_id.R'
+    'get_form_questions.R'
+    'gformr.R'
+    'googleformr-package.R'
+    'why_R_u_opensource.R'

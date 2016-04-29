@@ -7,7 +7,9 @@
 why_R_u_opensource(post_content)
 }
 \arguments{
-\item{post_content}{form Can be either the form_url or form_id}
+\item{post_content}{the option of the function returned from gformr}
+
+\item{active}{an option to make the function active or not}
 }
 \description{
 Sends Data back to my Google Form About Being opensource. gformr creates why_R_u_opensource into a linked function with the form.
