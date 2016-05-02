@@ -7,8 +7,7 @@ state and is being actively
 developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
 [![Build
 Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https://travis-ci.org/data-steve/googleformr)
-[![Coverage
-Status](https://coveralls.io/repos/data-steve/googleformr/badge.svg?branch=master)](https://coveralls.io/r/data-steve/googleformr?branch=master)<a href="https://img.shields.io/badge/Version-0.0.3-orange.svg"><img src="https://img.shields.io/badge/Version-0.0.3-orange.svg" alt="Version"/></a>
+<a href="https://img.shields.io/badge/Version-0.0.3-orange.svg"><img src="https://img.shields.io/badge/Version-0.0.3-orange.svg" alt="Version"/></a>
 
 ![](inst/googleformr_yay.png)
 
