@@ -14,7 +14,8 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 <a href="https://img.shields.io/badge/Version-0.0.4-orange.svg"><img src="https://img.shields.io/badge/Version-0.0.4-orange.svg" alt="Version"/></a>
 
 
-![logo](inst/googleformr_logo.png | width="200px")
+<img src="inst/googleformr_logo.png" width="200px" style="float:left; margin:10px;"/>
+
 **googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
 
@@ -113,10 +114,3 @@ You are welcome to:
 - compose a friendly e-mail to: <steven.troy.simpson@gmail.com>
 
 
-<script>
-.image-wrap-right
-{
-  float:left; 
-  margin:10px;
-}
-</script>
