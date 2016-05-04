@@ -1,3 +1,8 @@
+
+<div style="float:left; margin:10px;">
+ <img src="inst/googleformr_logo.png" width="200">
+</div>
+
 googleformr [![Follow](https://img.shields.io/twitter/follow/data_steve.svg?style=social)](https://twitter.com/intent/follow?screen_name=data_steve)
 ============
 
@@ -13,9 +18,7 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 
 **googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
-<div style="float:left; margin:10px;">
- <img src="inst/googleformr_logo.png" width="200">
-</div>
+
 
 Installation
 ============
