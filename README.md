@@ -9,9 +9,11 @@ developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repos
 Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https://travis-ci.org/data-steve/googleformr)
 <a href="https://img.shields.io/badge/Version-0.0.4-orange.svg"><img src="https://img.shields.io/badge/Version-0.0.4-orange.svg" alt="Version"/></a>
 
-![](inst/googleformr_yay.png)
 
-**googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
+
+<div style="float:left; margin:10px;">
+ <img src="/images/googleformr_logo.png" width="200">
+</div>**googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
 Installation
 ============
@@ -28,6 +30,8 @@ to install the development version:
     if (!require("pacman")) install.packages("pacman")
     pacman::p_load_gh("data-steve/googleformr")
 
+
+![](inst/googleformr_yay.png)
 
 Get User Feedback with googleformr
 ============

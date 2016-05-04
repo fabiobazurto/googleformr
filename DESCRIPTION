@@ -1,6 +1,6 @@
 Package: googleformr
 Title: Collect Data Programmatically by POST Methods to Google Forms
-Version: 0.0.4
+Version: 0.1.0
 Authors@R: c(person("Steve", "Simpson", email = "steven.troy.simpson@gmail.com", role = c("aut", "cre")))
 Maintainer: Steve Simpson <steven.troy.simpson@gmail.com>
 Description: GET and POST data to Google Forms; an API to Google Forms,
