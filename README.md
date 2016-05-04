@@ -1,10 +1,11 @@
 
 <div style="float:left; margin:10px;">
  <img src="inst/googleformr_logo.png" width="200">
+ <h1>googleformr</h1> [![Follow](https://img.shields.io/twitter/follow/data_steve.svg?style=social)](https://twitter.com/intent/follow?screen_name=data_steve)
 </div>
 
-googleformr [![Follow](https://img.shields.io/twitter/follow/data_steve.svg?style=social)](https://twitter.com/intent/follow?screen_name=data_steve)
-============
+
+
 
 
 [![Project Status: Active - The project has reached a stable, usable
