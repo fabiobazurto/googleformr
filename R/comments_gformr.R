@@ -13,5 +13,7 @@
 #' between lots of comments from one useR vs. many useRs")
 #' }
 
-comments_gformr <- gformr(form = "https://docs.google.com/forms/d/1doF8dvWKqbTBS_hQIj_QpYtGc1_fl8GdIN-X08hJ644/viewform"
+comments_gformr <- gformr(form = "https://docs.google.com/forms/d/1Ttl_SGI1cjRHSw_oU7kwxnGESoMwf4BU4NMAqPA-BRs/viewform"
                       , custom_reply  = "Thanks for supporting googleformr!")
+
+
