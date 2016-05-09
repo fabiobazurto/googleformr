@@ -14,7 +14,7 @@ Imports:
     xml2
 Suggests:
     testthat
-Date: 2015-11-18
+Date: 2016-05-05
 License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
