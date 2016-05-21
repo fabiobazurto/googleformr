@@ -21,7 +21,7 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 
 ## 5-min How To
 
-### Step 1: Get googleformr
+#### Step 1: Get googleformr
 
 Getting googleformr is simple.  This simple chunk should have you up and running withgoogleformr in a jiffy (do people still say jiffy?):
 
@@ -30,7 +30,8 @@ if (!require("pacman")) install.packages("pacman")
 pacman::p_load_gh("data-steve/googleformr")
 ```
 
-### Step 2: Make a Google Form
+
+#### Step 2: Make a Google Form
 
 Then make a Google Form with a text entry.  Here’s an image showing the steps to link the form to a spreadsheet. 
 
@@ -41,14 +42,14 @@ In the Google Form edit:
 1. Click Responses Tab 
 2. Click those three dot thing-ies 
 3. Click “Select response destination” 
-4. click “Create a new spreadsheet”  Step 1 done.  Almost there…
+4. click “Create a new spreadsheet”  
 
+Step 1 done.  Almost there… In this image we see the Google Form and the accompanying Google Sheet.
 
-In this image we see the Google Form and the accompanying Google Sheet.
 ![](/inst/form_spreadsheet.png)
 
 
-### Step 3: Send Information Via googleformr
+#### Step 3: Send Information Via googleformr
 
 Just use the gformr function, add the Google Form url (from Step 1) and viola you have  a function that allows you to send information to a Google Form (in this case I made a pingfunction).  This is the function we can use to send information about the package and script usage within our company.
 
