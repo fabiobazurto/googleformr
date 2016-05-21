@@ -28,7 +28,7 @@ There's many ways to use googleformr to collect data. In the first example below
 
 #### Step 1: Get googleformr
 
-Getting googleformr is simple.  This simple chunk should have you up and running withgoogleformr in a jiffy (do people still say jiffy?):
+Getting **googleformr** is simple.  This simple chunk should have you up and running with **googleformr** in a jiffy (do people still say jiffy?):
 
 ```{r}
 if (!require("pacman")) install.packages("pacman")
@@ -56,7 +56,7 @@ Step 1 done.  Almost there… In this image we see the Google Form and the a
 
 #### Step 3: Send Information Via googleformr
 
-Just use the gformr function, add the Google Form url (from Step 1) and viola you have  a function that allows you to send information to a Google Form (in this case I made a pingfunction).  This is the function we can use to send information about the package and script usage within our company.
+Just use the `gformr` function, add the Google Form url (from Step 1) and viola you have  a function that allows you to send information to a Google Form (in this case I made a pingfunction).  This is the function we can use to send information about the package and script usage within our company.
 
 ```{r}
 ping <- googleformr::gformr('https://docs.google.com/forms/d/1sLh9CBW7RuzShqnbt260Ud85I_I2qQEdw_S6iMytJx4')
