@@ -19,6 +19,7 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 **googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
 
+## 5-min How To
 
 ### Step 1: Get googleformr
 
@@ -47,12 +48,12 @@ In this image we see the Google Form and the accompanying Google Sheet.
 ![](/inst/form_spreadsheet.png)
 
 
-Step 3: Send Information Via googleformr
+### Step 3: Send Information Via googleformr
 
 Just use the gformr function, add the Google Form url (from Step 1) and viola you have  a function that allows you to send information to a Google Form (in this case I made a pingfunction).  This is the function we can use to send information about the package and script usage within our company.
 
 ```{r}
-ping <- googleformr::gformr('https://docs.google.com/forms/d/1sLh9CBW7RuzShqnbt260Ud85I_I2qQEdw_S6iMytJx4/prefill')
+ping <- googleformr::gformr('https://docs.google.com/forms/d/1sLh9CBW7RuzShqnbt260Ud85I_I2qQEdw_S6iMytJx4')
 ping('employee1234')
 ```
 
@@ -82,27 +83,30 @@ So finding new ways to stay accessible to my useRs is important to me.
 
 Give it a try with something like below!
 
-    googleformr::comments_gformr(
-            post_content = "It would useful for functionality to help distinguish in the data
-                            between lots of comments from one useR vs. many useRs" )
+```{r}
+googleformr::comments_gformr(
+        post_content = "It would useful for functionality to help distinguish in the data
+                        between lots of comments from one useR vs. many useRs" )
+```
 
 Create your own feedback function
 =============
 
 First, make sure to grab **googleformr** from CRAN, if you haven't yet. [I love **pacman** as my library / function handler](/let-pacman-eat-up-library-and-require/). The `p_load` will load a library. If it isn't installed, it will install from CRAN and then load it.
 
-      if (!require("pacman")) install.packages("pacman")
-      pacman::p_load(googleformr)
-
+```{r}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(googleformr)
+```
 
 You can create your own `feedback_pkg_name` function by linking it to a Google Form. Get your forms started at the [Google Forms page](https://www.google.com/forms/about/).  Once you have a google form created with one short answer question, grab the form's url and use code below: 
 
-
-      # create function
-      form <- "your_google_form_url"
-      feedback_pkg_name <- gformr(form
-                                  , custom_reply = "Thanks for supporting pkg_name")
-      
+```{r}
+# create function
+form <- "your_google_form_url"
+feedback_pkg_name <- gformr(form
+                            , custom_reply = "Thanks for supporting pkg_name")
+```
 
 Note: it is recommended to call your feedback function 
 
@@ -113,9 +117,10 @@ So a function name following the pattern `feedback_pkg_name` should get the best
 
 Once you re-document and re-build your package and post it to github or CRAN, your users can send feedback directly to you from the R console by simply  putting their feedback into your feedback function.
 
-      fdbk <-  # their comments
-      feedback_pkg_name(fdbk)
-
+```{r}
+fdbk <-  # their comments
+feedback_pkg_name(fdbk)
+```
 
 
 Helper Functionality
@@ -129,14 +134,14 @@ You can test that your new `feedback_pkg_name` function works by:
 
 You can also extract Google Form question text or entry points using to make sure you can bring back the same information as is on your form:
 
+```{r}
+# questions
+form <- "your_google_form_url"
+form %>% get_form() %>% get_form_questions()
 
-	# questions
-	form <- "your_google_form_url"
-	form %>% get_form() %>% get_form_questions()
-
-	# entry ids
-	form %>% get_form() %>% get_form_entry_ids()
-
+# entry ids
+form %>% get_form() %>% get_form_entry_ids()
+```
 
 Contact
 =======
