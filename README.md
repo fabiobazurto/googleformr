@@ -19,8 +19,12 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 **googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
 
-## 5-min How-To: One of many applications
-## Use Case: Track Package Use
+# 5-min How-Tos: 2 use cases 
+
+There's many ways to use googleformr to collect data. In the first example below, the developer is essentially using googleformr to use herself data back from a user's implementation of her code. The second use case show cases how to set up a function in your package so that users can send comments directly to you, by-passing email or github issues. 
+
+
+## Use Case #1: Track Package Usage
 
 #### Step 1: Get googleformr
 
@@ -70,8 +74,7 @@ With this simple code snippet placed in the R scripts of our internal packages w
 
 
 
-Send User Feedback to googleformr
-============
+## Use Case #2: Send User Feedback to googleformr
 
 
 ![](inst/googleformr_yay.png)
@@ -94,8 +97,9 @@ googleformr::comments_gformr(
                         between lots of comments from one useR vs. many useRs" )
 ```
 
-Create your own feedback function
-=============
+
+#### Create your own feedback function
+
 
 First, make sure to grab **googleformr** from CRAN, if you haven't yet. [I love **pacman** as my library / function handler](/let-pacman-eat-up-library-and-require/). The `p_load` will load a library. If it isn't installed, it will install from CRAN and then load it.
 
@@ -128,8 +132,7 @@ feedback_pkg_name(fdbk)
 ```
 
 
-Helper Functionality
-====================
+## Helper Functionality
 
 You can test that your new `feedback_pkg_name` function works by:
 
@@ -148,8 +151,8 @@ form %>% get_form() %>% get_form_questions()
 form %>% get_form() %>% get_form_entry_ids()
 ```
 
-Contact
-=======
+#### Contact
+
 
 You are welcome to: 
 - send me a comment via `googleformr::comments_gformr()`
