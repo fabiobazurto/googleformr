@@ -11,7 +11,7 @@ state and is being actively
 developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
 [![Build
 Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https://travis-ci.org/data-steve/googleformr)
-<a href="https://img.shields.io/badge/Version-0.0.4-orange.svg"><img src="https://img.shields.io/badge/Version-0.0.4-orange.svg" alt="Version"/></a>
+<a href="https://img.shields.io/badge/Version-0.1.1-orange.svg"><img src="https://img.shields.io/badge/Version-0.1.1-orange.svg" alt="Version"/></a>
 
 
 <img src="inst/googleformr_logo.png" width="200px" style="float:left; margin:10px;"/>
@@ -20,20 +20,49 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 
 
 
-Installation
-============
+### Step 1: Get googleformr
 
-To download the development version of **googleformr**:
+Getting googleformr is simple.  This simple chunk should have you up and running withgoogleformr in a jiffy (do people still say jiffy?):
 
-Download the [zip
-ball](https://github.com/data-steve/googleformr/zipball/master) or
-[tar
-ball](https://github.com/data-steve/googleformr/tarball/master),
-decompress and run `R CMD INSTALL` on it, or use the **pacman** package
-to install the development version:
+```{r}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load_gh("data-steve/googleformr")
+```
 
-    if (!require("pacman")) install.packages("pacman")
-    pacman::p_load_gh("data-steve/googleformr")
+### Step 2: Make a Google Form
+
+Then make a Google Form with a text entry.  Here’s an image showing the steps to link the form to a spreadsheet. 
+
+![](/inst/new_forms_how_to.png)
+
+In the Google Form edit: 
+
+1. Click Responses Tab 
+2. Click those three dot thing-ies 
+3. Click “Select response destination” 
+4. click “Create a new spreadsheet”  Step 1 done.  Almost there…
+
+
+In this image we see the Google Form and the accompanying Google Sheet.
+![](/inst/form_spreadsheet.png)
+
+
+Step 3: Send Information Via googleformr
+
+Just use the gformr function, add the Google Form url (from Step 1) and viola you have  a function that allows you to send information to a Google Form (in this case I made a pingfunction).  This is the function we can use to send information about the package and script usage within our company.
+
+```{r}
+ping <- googleformr::gformr('https://docs.google.com/forms/d/1sLh9CBW7RuzShqnbt260Ud85I_I2qQEdw_S6iMytJx4/prefill')
+ping('employee1234')
+```
+
+You’re in business with a secure way to send data from R to Google Spreadsheet.
+Go ahead try it.  Replace ’employee1234′ with whatever you want, go to the Google Sheet, and watch the R code you send auto-magically be sent to the spreadsheet. I’ve made this sheet public for demonstration purposes, but generally it’s recommended that you keep the sheets private.
+
+With this simple code snippet placed in the R scripts of our internal packages we were able to determine what packages and scripts were used, by whom, and how frequently.  So far our pneumatic road tube code  has provided insight into what tools to improve and new features to consider.  And it only took 5 minutes to set up end to end.
+
+[revised from trinker's helpful post](https://trinkerrstuff.wordpress.com/2016/05/12/googleformr-at-work-pneumatic-road-tube-allegory/)
+
 
 
 ![](inst/googleformr_yay.png)
