@@ -67,10 +67,13 @@ With this simple code snippet placed in the R scripts of our internal packages w
 
 
 
-![](inst/googleformr_yay.png)
+
 
 Send User Feedback to googleformr
 ============
+
+
+![](inst/googleformr_yay.png)
 
 **googleformr** comes with a `comments_gformr` function that was built with **googleformr**, allowing useRs to send comments to  a Google Form I've created for collecting user feedback. 
 
