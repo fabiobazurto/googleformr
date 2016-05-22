@@ -18,7 +18,7 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 
 **googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning.
 
-
+ 
 # 5-min How-Tos: 2 use cases 
 
 There's many ways to use googleformr to collect data. In the first example below, the developer is essentially using googleformr to use herself data back from a user's implementation of her code. The second use case show cases how to set up a function in your package so that users can send comments directly to you, by-passing email or github issues. 
@@ -54,7 +54,7 @@ Step 1 done.  Almost there… In this image we see the Google Form and the a
 ![](/inst/form_spreadsheet.png)
 
 
-#### Step 3: Send Information Via googleformr
+#### Step 3: Send information via googleformr
 
 Just use the `gformr` function, add the Google Form url (from Step 1) and viola you have  a function that allows you to send information to a Google Form (in this case I made a pingfunction).  This is the function we can use to send information about the package and script usage within our company.
 
@@ -71,7 +71,8 @@ With this simple code snippet placed in the R scripts of our internal packages w
 [revised from trinker's helpful post](https://trinkerrstuff.wordpress.com/2016/05/12/googleformr-at-work-pneumatic-road-tube-allegory/)
 
 
-
+<br>
+<br>
 
 
 ## Use Case #2: Send User Feedback to googleformr
