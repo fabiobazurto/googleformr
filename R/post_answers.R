@@ -1,6 +1,6 @@
 #' Posts Answers to a Google Form
 #'
-#' Posts Answers to a Google Form.
+#' Posts Answers to a Google Form specified by url or id.
 #'
 #' @param form  form id or url
 #' @param answers vector of answers
