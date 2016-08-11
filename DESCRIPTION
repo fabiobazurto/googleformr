@@ -31,4 +31,3 @@ Collate:
     'comments_gformr.R'
     'get_form_questions.R'
     'get_form_str.R'
-    'post_answers.R'
