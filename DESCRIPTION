@@ -1,6 +1,6 @@
 Package: googleformr
 Title: Collect Data Programmatically by POST Methods to Google Forms
-Version: 0.1.1
+Version: 0.1.3
 Authors@R: c(person("Steve", "Simpson", email = "steven.troy.simpson@gmail.com", role = c("aut", "cre")))
 Maintainer: Steve Simpson <steven.troy.simpson@gmail.com>
 Description: GET and POST data to Google Forms; an API to Google Forms, allowing
@@ -14,7 +14,7 @@ Imports:
     xml2
 Suggests:
     testthat
-Date: 2016-05-05
+Date: 2016-08-05
 License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
@@ -30,3 +30,5 @@ Collate:
     'gformr.R'
     'comments_gformr.R'
     'get_form_questions.R'
+    'get_form_str.R'
+    'post_answers.R'
