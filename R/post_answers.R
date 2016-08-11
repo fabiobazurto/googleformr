@@ -13,7 +13,9 @@
 post_answers <- function(form, answers){
   entry.ids <- get_form_entry_ids(get_form(form))
   form_url <- make_url(form, "post")
-  invisible(httr::POST(form_url, query = stats::setNames(as.list(as.character(answers)),
-                                                         as.character(entry.ids))))
+  check_form_works(invisible(
+    httr::POST(form_url, query = stats::setNames(as.list(as.character(answers)),
+                                                         as.character(entry.ids)))
+    ))
 }
 

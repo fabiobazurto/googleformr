@@ -12,7 +12,7 @@ post_answers(form, answers)
 \item{answers}{vector of answers}
 }
 \description{
-Posts Answers to a Google Form.
+Posts Answers to a Google Form specified by url or id.
 }
 \examples{
 \dontrun{
