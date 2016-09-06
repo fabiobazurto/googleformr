@@ -28,11 +28,10 @@ There's many ways to use googleformr to collect data. In the first example below
 
 #### Step 1: Get googleformr
 
-Getting **googleformr** is simple.  This simple chunk should have you up and running with **googleformr** in a jiffy (do people still say jiffy?):
+Getting **googleformr** is simple.  This simple chunk should have you up and running with **googleformr** in a jiffy (do people still say jiffy?). We're using dependencies=TRUE suboption to insure the `selectr` dependencies is also installed, if not already:
 
 ```{r}
-if (!require("pacman")) install.packages("pacman")
-pacman::p_load_gh("data-steve/googleformr")
+devtools::install_github("data-steve/googleformr", dependencies = TRUE)
 ```
 
 
