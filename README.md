@@ -18,8 +18,7 @@ Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https:/
 
 **googleformr** is an API to Google Forms, allowing users to POST data securely to Google Forms without needing authentication or permissioning. 
 
-Read [how-tos, use cases, and updates at my blog](http://data-steve.github.io/tags/#googleformr).
-
+Read <a href='http://data-steve.github.io/tags/#googleformr' target='_blank'>how-tos, use cases, and updates at my blog</a>.
  
 # 5-min How-Tos: 2 use cases 
 
