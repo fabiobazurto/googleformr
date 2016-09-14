@@ -5,13 +5,12 @@
 googleformr [![Follow](https://img.shields.io/twitter/follow/data_steve.svg?style=social)](https://twitter.com/intent/follow?screen_name=data_steve)
 ============
 
-
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/0.1.10/active.svg)](http://www.repostatus.org/#active)
 [![Build
 Status](https://travis-ci.org/data-steve/googleformr.svg?branch=master)](https://travis-ci.org/data-steve/googleformr)
-<a href="https://img.shields.io/badge/Version-0.1.10-orange.svg"><img src="https://img.shields.io/badge/Version-0.1.1-orange.svg" alt="Version"/></a>
+<a href="https://img.shields.io/badge/Version-0.1.10-orange.svg"><img src="https://img.shields.io/badge/Version-0.1.10-orange.svg" alt="Version"/></a>
 
 
 <img src="inst/googleformr_logo.png" width="200px" style="float:left; margin:10px;"/>
