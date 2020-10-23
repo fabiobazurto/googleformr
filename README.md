@@ -24,6 +24,23 @@ Read <a href='https://data-steve.github.io/tags/#googleformr' target='_blank'>ho
 There's many ways to use googleformr to collect data. In the first example below, the developer is essentially using googleformr to use herself data back from a user's implementation of her code. The second use case show cases how to set up a function in your package so that users can send comments directly to you, by-passing email or github issues. 
 
 
+## How to Install locally
+
+```{bash}
+# git clone https://github.com/fabiobazurto/googleformr.git
+```
+
+Enter yout R console.
+
+Install the local package downloaded previously.
+
+```{r}
+install.packages("YOUR DIRECTORY REPO/googleformr", repo=NULL, type="source")
+```
+
+
+
+
 ## Use Case #1: Track Package Usage
 
 #### Step 1: Get googleformr

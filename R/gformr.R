@@ -21,8 +21,12 @@ gformr <- function (form, custom_reply = NULL) {
       if (!is.null(custom_reply)){
         message(custom_reply)
       }
+
+      campos <- entry.ids %>% str_replace_all("_sentinel",
+            "")
+
       invisible(httr::POST(form_url, query = stats::setNames(as.list(as.character(post_content)),
-                                                             as.character(entry.ids))))
+                                                             as.character(campos))))
     }
   }
 }
